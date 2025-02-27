@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Brush+Script+MT&family=Fredoka+One&family=Bellefair&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+body {
+    object-fit: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    width: 100%;
+   height: 50vh;
+   font-family: "Baskerville", serif;
+}
+   
+
+body::before {
+    background-image: linear-gradient(rgba(5, 3, 3, 0.6), rgba(0, 0, 0, 0.6)), url('restaurant.jpg');
+    background-size: cover;
+    background-position: center;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: backgroundAnimation 10s infinite alternate;
+    z-index: -2;
+}
+
+@keyframes backgroundAnimation {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+.topbar {
+    background-color: rgba(7, 68, 34, 0);
+    color: white;
+    padding: 10px 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.3rem;
+    border-bottom: 2px solid rgba(255,255,255,.25);
+    padding-bottom: 40px;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-item {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-item .icon {
+    margin-right: 5px;
+}
+
+
+.navbar {
+    background-color: rgba(7, 68, 34, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 7.2rem;
+    padding: 0 20px;
+   height: 100px;
+} 
+
+.logo img {
+    width: 3.5rem; /* Adjust the size to match the font size */
+    height: auto;
+    margin-top: 37px; 
+}
+/* Ensure the logo is responsive */
+
+.left {
+    display: flex; /* Ensures that child elements are displayed as flex items */
+    align-items: center; 
+}
+.left h1 {
+    margin-left: 10px;
+    font-size: 3.5rem;
+    cursor: pointer;
+    font-family: 'Brush Script MT', cursive;
+    display: flex;
+}
+
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: #ed1e79;
+    line-height: 80px;
+}
+.right {
+    display: flex; /* Ensures that child elements are displayed as flex items */
+    align-items: center;
+}
+.right ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.right ul li {
+    margin-left: 20px; /* Add space between menu items */
+}
+.right ul li a {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1s;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.right ul li a:hover {
+    background-color: #fff;
+    border-radius: 7px;
+    color: rgb(22, 7, 36);
+}
+
+  
+    
+@media screen and (max-width:805px) {
+    .list{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(22, 7, 36);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 4rem;
+        left: 100%;
+        transition: all 1s;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+}
+
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-size: 900;
+    line-height: 2.0;
+    letter-spacing: 2.0px;
+    z-index: 1;
+    opacity: 0; /* Initially hide the welcome message */
+    animation: welcomeAnimation 2s forwards ease-out;
+}
+@keyframes welcomeAnimation {
+    0% { opacity: 0; transform: translateY(-50%, -50%); }
+    100% { opacity: 1; transform: translateY(-50%, -50%); }
+}
+h3{
+    font-family: 'Brush Script Mt', cursive;
+    color: hsl(38, 61%, 73%);
+}
+.image-container {
+    text-align: center; /* Center the image horizontally */
+    margin-top: -20px;
+}
+
+h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 5px 5px;
+    margin-top: 20px;
+    background: none;
+    color: #fff; /* White text, you can customize */
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    
+}
+
+.read-more-btn:hover {
+    background-color:  hsl(38, 61%, 73%);
+    color: black;/* Darker green color on hover, you can customize */
+}
+

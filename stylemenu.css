@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Sorts+Mill+Goudy:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: hsla(210, 4%, 11%, 1);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-title {
+    text-align: center;
+    margin-top: 20px;
+     font-family: 'Sorts Mill Goudy', sans-serif;
+    color: hsl(38, 61%, 73%);
+    font-weight: bolder;
+    font-size: 1.6rem;
+  }
+  .image-container {
+    text-align: center; 
+    margin-top: -20px;
+}
+  .menu-container {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-width: 600px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .menu-category {
+    flex: 1 1 calc(50% - 5px);
+    color: #fff;
+    text-align: center;
+    padding: 120px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+    overflow: hidden;
+    font-family: 'Sorts Mill Goudy', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline;
+  }
+  
+  .menu-category:hover {
+    filter: brightness(0.7); 
+  }
+
+
+  .menu-items {
+    display: none;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .menu-item {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    }
+
+  .menu-item:hover {
+    background-color: #f5f5f5;
+}
+
+  .menu-item span {
+    flex: 1;
+  }
+
+  .menu-category.soup {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('soups.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .menu-category.salad {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('salads.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .menu-category.appetizer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('appetizers.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .menu-category.starter {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('starters.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .menu-category.sizzler {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sizzler1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .menu-category.pasta {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pasta.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .menu-category.pizza {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pizza.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .menu-category.mainc {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('maincourse.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .menu-category.rice {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('rice.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .menu-category.chinesem {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('chinese.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .menu-category.inroti {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('roti.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .menu-category.dessertbev{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('desserts.jpeg');
+    background-size: cover;
+    background-position: center;
+  }

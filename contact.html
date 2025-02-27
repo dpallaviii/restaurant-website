@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+   <title>Contact Us - Emerald Palate Restauarnt</title>
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Sorts+Mill+Goudy:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    
+    body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(5, 3, 3, 0.6), rgba(0, 0, 0, 0.6)), url("footer-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+header {
+    background-color: rgba(7, 68, 34, 0);
+    color: hsl(38, 61%, 73%);
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    z-index: 1;
+    font-family: 'Sorts Mill Goudy', sans-serif;
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+.image-container {
+    text-align: center; /* Center the image horizontally */
+    margin-top: -20px;
+}
+.contact-info{
+max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(10, 10, 10);
+    background-image: url("footer-form-bg.png");
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.reservation {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.reservation-form {
+  background-color: rgb(22, 22, 22);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+  background-color: #3f3d3d; 
+  color: white; 
+  border-radius: 5px;
+}
+.reservation-form label,
+.reservation-form textarea::placeholder {
+  color: white; 
+}
+
+.reservation-form button {
+  background-color: hsl(38, 61%, 73%); 
+  color: black 
+}
+
+.reservation-form textarea {
+  height: 150px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+.headline-1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  font-family: 'Sorts Mill Goudy', sans-serif;
+  color: hsl(38, 61%, 73%); 
+}
+
+.form-text {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.input-wrapper input[name="phone"] {
+  width: calc(50% - 5px);
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-wrapper input[name="name"] {
+  width: calc(50% - 5px);
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+.input-wrapper input[name="reservation-date"],
+.input-wrapper select[name="reservation-time"],
+.input-wrapper select[name="person"] {
+  height: 70px; 
+  width: 170px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+.input-wrapper input[name="reservation-date"] {
+  text-transform: uppercase;
+}
+.input-field {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.input-field
+.icon-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.ion-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #111111;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: 30px;
+position: relative;
+  top: 2px;
+}
+
+textarea {
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: hsl(38, 61%, 73%); 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+.text-2 {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .input-wrapper {
+    flex-direction: column;
+  }
+
+  .icon-wrapper {
+    margin-bottom: 10px;
+  }
+
+  .text-1 {
+    display: none;
+  }
+
+  .text-2 {
+    display: inline;
+  }
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 48px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.reservation-form input:hover,
+.reservation-form select:hover,
+.reservation-form textarea:hover {
+  border-color: hsl(38, 61%, 73%); 
+  border-width: 5px;
+}
+
+
+.reservation-form .btn:hover {
+  background-color: black; 
+  color: #fff; 
+  border-color: hsl(38, 61%, 73%); 
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    
+}
+#popupCloseBtn {
+  padding: 10px 20px; 
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#popupCloseBtn:hover {
+  background-color: black;
+  color: #fff;
+  border-color: hsl(38, 61%, 73%);
+}
+.social-media-logos h3 {
+  color: white;
+  margin-bottom: 10px; 
+  font-family: 'Poppins', sans-serif;
+}
+.social-media-logos {
+  text-align: center;
+  margin-top: -60px;
+  align-items: center;
+  padding: 20px; 
+  display: flex;
+  justify-content: center; 
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.social-media-logos h3 {
+  color: white;
+}
+.social-media-logos img {
+  width: 40px; 
+  height: 40px; 
+  margin: 0 10px; 
+}
+.zomato-logo {
+  display: inline-block;
+  border-radius: 50%; 
+  overflow: hidden;
+}
+
+.zomato-logo img {
+  width: 40px; 
+  height: 40px; 
+  background-color: white;
+  border-radius: 50%;
+}
+.footer-bottom {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.footer-bottom .copyright {
+  font-size: 14px;
+  color: gray;
+}
+
+   </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <p class="image-container"><img src="separator.png" alt="Small Image Description" style="width: 200px; height: auto"></p>
+    </header>
+
+    <section class="contact-info">
+        <p>Welcome to <b>Emerald Palate!</b> If you have any questions or feedback, feel free to get in touch with us.</p>
+
+        <p>We are located at:</p>
+        <address>
+           <b> Emerald Palate,<br>
+            29th Road; Bandra West, <br>
+            Mumbai - 400050</b>
+        </address>
+
+        <p>For reservations or inquiries, you can reach us at:</p>
+        <p><b>Telephone No: 22-2846xxx</p>
+        <p>Phone: 908277xxxx</p>
+        Email: emeraldpalate1960@gmail.com</b> </p>
+ </section>
+
+    <section class="reservation">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form action="" class="form-left">
+
+              <h2 class="headline-1 text-center">Online Reservation</h2>
+
+              <p class="form-text text-center">
+                Fill out the following form to book a table in advance.
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field text-white">
+
+                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field text-white">
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                    <select name="person" class="input-field">
+                    <option value="1-person">1 Person</option>
+                    <option value="2-person">2 Person</option>
+                    <option value="3-person">3 Person</option>
+                    <option value="4-person">4 Person</option>
+                    <option value="5-person">5 Person</option>
+                    <option value="6-person">6 Person</option>
+                    <option value="7-person">7 Person</option>
+                    <option value="8-person">8 Person</option>
+                    <option value="9-person">9 Person</option>
+                    <option value="10-person">10 Person</option>
+                    <option value="11-person">11 Person</option>
+                    <option value="12-person">12 Person</option>
+                    <option value="13-person">13 Person</option>
+                    <option value="14-person">14 Person</option>
+                    <option value="15-person">15 Person</option>
+                  </select>
+
+                  
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
+                  
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="010:00am">10 : 30 am</option>
+                    <option value="011:00am">11 : 00 am</option>
+                    <option value="012:00am">12 : 00 am</option>
+                    <option value="01:00pm">01 : 00 pm</option>
+                    <option value="02:00pm">02 : 00 pm</option>
+                    <option value="03:00pm">03 : 00 pm</option>
+                    <option value="04:00pm">04 : 00 pm</option>
+                    <option value="05:00pm">05 : 00 pm</option>
+                    <option value="06:00pm">06 : 00 pm</option>
+                    <option value="07:00pm">07 : 00 pm</option>
+                    <option value="08:00pm">08 : 00 pm</option>
+                    <option value="09:00pm">09 : 00 pm</option>
+                    <option value="10:00pm">10 : 00 pm</option>
+                    <option value="10:00pm">11 : 30 pm</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+                </div>
+
+              <textarea name="message" placeholder="Message or any special requirements" autocomplete="off" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Book A Table</span>
+
+                <span class="text text-2" aria-hidden="true">Book A Table</span>
+              </button>
+            </form>
+            <div id="popup" class="popup">
+                <p>Your table has been booked. Thank you for your reservation!</p>
+                <button id="popupCloseBtn">Close</button>
+            </div>
+          </section>
+          
+          <section class="social-media-logos">
+            <div class="find-us-on">
+            <h3>Find us on:</h3>
+            
+            <div class="logo-container">
+            <a href="https://www.instagram.com/" target="_blank"><img src="instagram logo.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook logo.png" alt="Facebook"></a>
+            <a href="https://www.zomato.com/" target="_blank" class="zomato-logo">
+              <img src="zomato logo.png" alt="Zomato">
+            </a>
+            </div>
+            </div>
+          </section>
+          
+          <section class="footer-bottom">
+          <p class="copyright">
+              &copy; 2024 Emerald Palate. All rights reserved | Crafted by PallaviDave.
+            </p>
+    
+          </section>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+            
+            function showPopup() {
+                document.getElementById("popup").style.display = "block";
+            }
+
+            
+            function closePopup() {
+                document.getElementById("popup").style.display = "none";
+            }
+            function submitForm(event) {
+                event.preventDefault();
+                showPopup();
+            }
+            document.querySelector('.reservation-form form').addEventListener('submit', submitForm);
+            document.getElementById('popupCloseBtn').addEventListener('click', closePopup);
+        });
+            </script>
+</body>
+</html>

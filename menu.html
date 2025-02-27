@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="stylemenu.css">
+  <title>Restaurant Menu</title>
+</head>
+<body>
+  <div class="menu-title">
+ <h1>Restaurant Menu</h1>
+ <p class="image-container"><img src="separator.png" alt="Small Image Description" style="width: 200px; height: auto"></p>
+  </div>
+<div class="menu-container">
+  <div class="menu-category soup" onclick="toggleMenu('soups')">Soups</div>
+  <div class="menu-items" id="soups">
+    <div class="menu-item">
+      <span>Tomato Basil Soup</span>
+      <span>₹170</span>
+    </div>
+    <div class="menu-item">
+      <span>Manchow Soup</span>
+      <span>₹165</span>
+    </div>
+    <div class="menu-item">
+        <span>Hot & Sour Soup</span>
+        <span>₹165</span>
+      </div>
+      <div class="menu-item">
+        <span>Brocolli Chowder Soup</span>
+        <span>₹180</span>
+      </div>
+      <div class="menu-item">
+        <span>Korean Tofu Soup</span>
+        <span>₹210</span>
+      </div>
+      <div class="menu-item">
+        <span>Manchow Soup (Chicken)</span>
+        <span>₹200</span>
+      </div>
+      <div class="menu-item">
+        <span>Hot & Sour Soup (Chicken)</span>
+        <span>₹200</span>
+      </div>
+      <div class="menu-item">
+        <span>Laksa Soup (Chicken)</span>
+        <span>₹237</span>
+      </div>
+      <div class="menu-item">
+        <span>Korean Chicken Soup</span>
+        <span>₹245</span>
+      </div>
+      </div>
+      </div>
+  
+  <div class="menu-container">
+  <div class="menu-category salad" onclick="toggleMenu('salads')">Salads</div>
+  <div class="menu-items" id="salads">
+    <div class="menu-item">
+      <span>Veg Greek Salad</span>
+      <span>₹200</span>
+    </div>
+    <div class="menu-item">
+      <span>Tandoori Paneer Salad</span>
+      <span>₹247</span>
+    </div>
+    <div class="menu-item">
+      <span>Nachos Veggie Delight Salad</span>
+      <span>₹261</span>
+    </div>
+    <div class="menu-item">
+        <span>Mushroom Merry Salad</span>
+        <span>₹240</span>
+      </div>
+      <div class="menu-item">
+        <span>Paneer Chipotle Salad</span>
+        <span>₹270</span>
+      </div>
+      <div class="menu-item">
+        <span>Hummus Salad</span>
+        <span>₹295</span>
+      </div>
+      <div class="menu-item">
+        <span>Chicken Keto Salad</span>
+        <span>₹269</span>
+      </div>
+      <div class="menu-item">
+        <span>Pesto Grilled Chicken Salad</span>
+        <span>₹310</span>
+      </div>
+      <div class="menu-item">
+        <span>Egg and Bacon Salad</span>
+        <span>₹285</span>
+      </div>
+      <div class="menu-item">
+        <span>Chicken Greek Salad</span>
+        <span>₹285</span>
+      </div>
+      <div class="menu-item">
+        <span>Oriental Lime Chicken Salad</span>
+        <span>₹310</span>
+      </div>
+      </div>
+      </div>
+
+<div class="menu-container">
+    <div class="menu-category appetizer" onclick="toggleMenu('appetizers')">Appetizers</div>
+    <div class="menu-items" id="appetizers">
+      <div class="menu-item">
+        <span>French Fries</span>
+        <span>₹190</span>
+      </div>
+      <div class="menu-item">
+        <span>Onion Rings</span>
+        <span>₹210</span>
+      </div>
+      <div class="menu-item">
+        <span>Veg Peri Peri Burger</span>
+        <span>₹250</span>
+      </div>
+      <div class="menu-item">
+        <span>Garvey Cheese Burger</span>
+        <span>₹258</span>
+      </div>
+      <div class="menu-item">
+        <span>Grilled Tofu Sandwich</span>
+        <span>₹290</span>
+      </div>
+      <div class="menu-item">
+        <span>Jalapeno Poppers</span>
+        <span>₹320</span>
+      </div>
+      <div class="menu-item">
+        <span>Cheese Garlic Bread</span>
+        <span>₹320</span>
+      </div>
+      <div class="menu-item">
+        <span>Potato Sweet Chilly Nuggets</span>
+        <span>₹300</span>
+      </div>
+      <div class="menu-item">
+        <span>Zucchini Gauc Bruschetta</span>
+        <span>₹311</span>
+      </div>
+      <div class="menu-item">
+        <span>Veggie Stromboli</span>
+        <span>₹350</span>
+      </div>
+      <div class="menu-item">
+        <span>Mexican Bean Cheese Shots</span>
+        <span>₹369</span>
+      </div>
+      <div class="menu-item">
+        <span>Smokey Cheese Dough Balls</span>
+        <span>₹340</span>
+      </div>
+      <div class="menu-item">
+        <span>Pizza Pockets</span>
+        <span>₹305</span>
+      </div>
+      <div class="menu-item">
+        <span>Veg Continental Bagel</span>
+        <span>₹385</span>
+      </div>
+      <div class="menu-item">
+        <span>Chicken Peri Peri Cheese Burger</span>
+        <span>₹390</span>
+      </div>
+      <div class="menu-item">
+        <span>Chicken Quesadilla</span>
+        <span>₹410</span>
+      </div>
+      <div class="menu-item">
+        <span>Chicken Jalapeno Poppers</span>
+        <span>₹369</span>
+      </div>
+      <div class="menu-item">
+        <span>Chicken Stuffed Cheese Garlic Bread</span>
+        <span>₹330</span>
+      </div>
+      <div class="menu-item">
+        <span>Fish Chips</span>
+        <span>₹475</span>
+      </div>
+      <div class="menu-item">
+        <span>Chicken Wings</span>
+        <span>₹499</span>
+      </div>
+      <div class="menu-item">
+        <span>Sausage & Fries</span>
+        <span>₹470</span>
+      </div>
+      <div class="menu-item">
+        <span>Grilled Cajun Chicken Bagel</span>
+        <span>₹419</span>
+      </div>
+    </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-category starter" onclick="toggleMenu('starters')">Starters</div>
+        <div class="menu-items" id="starters">
+          <div class="menu-item">
+        <span>Paneer Tikka</span>
+        <span>₹235</span>
+      </div>
+      <div class="menu-item">
+        <span>Hara Bhara Kebab</span>
+        <span>₹250</span>
+      </div>
+      <div class="menu-item">
+        <span>Cheese Coriander Roll</span>
+        <span>₹290</span>
+      </div>
+      <div class="menu-item">
+        <span>Corn Paneer Sikh Kebab</span>
+        <span>₹276</span>
+      </div>
+      <div class="menu-item">
+        <span>Stuffed Soya Chaap</span>
+        <span>₹220</span>
+      </div>
+      <div class="menu-item">
+        <span>Paneer Crispy</span>
+        <span>₹239</span>
+      </div>
+      <div class="menu-item">
+        <span>Sesame Cheesy Roll</span>
+        <span>₹309</span>
+      </div>
+      <div class="menu-item">
+        <span>Thai Balls</span>
+        <span>₹330</span>
+      </div>
+      <div class="menu-item">
+        <span>Veg Satay</span>
+        <span>₹321</span>
+      </div>
+      <div class="menu-item">
+        <span>Asian Cigar Roll</span>
+        <span>₹360</span>
+      </div>
+      <div class="menu-item">
+        <span>Veg Manchurian Dry</span>
+        <span>₹319</span>
+      </div>
+      <div class="menu-item">
+        <span>Kung Pao Potato</span>
+        <span>₹344</span>
+      </div>
+      <div class="menu-item">
+        <span>Crispy Thread Paneer</span>
+        <span>₹360</span>
+      </div>
+      <div class="menu-item">
+        <span>Manchurian Gravy</span>
+        <span>₹366</span>
+      </div>
+      <div class="menu-item">
+        <span>Chicken Lollipop</span>
+        <span>₹400</span>
+      </div>
+      <div class="menu-item">
+        <span>Chicken Keema Bruschetta</span>
+        <span>₹440</span>
+      </div>
+      <div class="menu-item">
+        <span>Fish Finger with Tartar Sauce</span>
+        <span>₹465</span>
+      </div>
+      <div class="menu-item">
+        <span>Coconut Popcorn Chicken</span>
+        <span>₹436</span>
+      </div>
+      <div class="menu-item">
+        <span>Asian Chicken Cigar Roll</span>
+        <span>₹404</span>
+      </div>
+      <div class="menu-item">
+        <span>Crispy Thread Chicken</span>
+        <span>₹450</span>
+      </div>
+      <div class="menu-item">
+        <span>Mongolian Fish Chilli</span>
+        <span>₹475</span>
+      </div>
+      <div class="menu-item">
+        <span>Tai Pai Prawns</span>
+        <span>₹466</span>
+      </div>
+      <div class="menu-item">
+        <span>Chicken Pataya Peri Peri</span>
+        <span>₹410</span>
+      </div>
+      <div class="menu-item">
+        <span>Fish Fry</span>
+        <span>₹490</span>
+      </div>
+      <div class="menu-item">
+        <span>Tawa Fry Pomfret</span>
+        <span>₹488</span>
+      </div>
+    </div>
+</div>
+
+<div class="menu-container">
+    <div class="menu-category sizzler" onclick="toggleMenu('sizzlers')">Sizzlers</div>
+    <div class="menu-items" id="sizzlers">
+      <div class="menu-item">
+    <span>Veggie Delight Sizzler</span>
+    <span>₹380</span>
+  </div>
+  <div class="menu-item">
+    <span>COttage Cheese Sizzler</span>
+    <span>₹400</span>
+  </div>
+  <div class="menu-item">
+    <span>Cajun Spiced Potato Sizzler</span>
+    <span>₹410</span>
+  </div>
+  <div class="menu-item">
+    <span>Veg Chinese Sizzler</span>
+    <span>₹430</span>
+  </div>
+  <div class="menu-item">
+    <span>Exotic Mexico Sizzler</span>
+    <span>₹455</span>
+  </div>
+  <div class="menu-item">
+    <span>Spaghetti Nepolitana Sizzler</span>
+    <span>₹471</span>
+  </div>
+  <div class="menu-item">
+    <span>Mexican Chicken Sizzler</span>
+    <span>₹480</span>
+  </div>
+  <div class="menu-item">
+    <span>Hawaiian Grilled Chicken Sizzler</span>
+    <span>₹499</span>
+  </div>
+  <div class="menu-item">
+    <span>Prawn Gamberoni Italian Sizzler</span>
+    <span>₹510</span>
+  </div>
+  <div class="menu-item">
+    <span>Chinese Non Veg Sizzler</span>
+    <span>₹519</span>
+  </div>
+  <div class="menu-item">
+    <span>Mixed Seadfood Sizzler</span>
+    <span>₹525</span>
+  </div>
+  </div>
+</div>
+
+<div class="menu-container">
+    <div class="menu-category pasta" onclick="toggleMenu('pasta & lasagna')">Pasta & Lasagna</div>
+    <div class="menu-items" id="pasta & lasagna">
+  <div class="menu-item">
+    <span>Arrabita Pasta</span>
+    <span>₹430</span>
+  </div>
+  <div class="menu-item">
+    <span>Alfredo Pasta</span>
+    <span>₹430</span>
+  </div>
+  <div class="menu-item">
+    <span>Pink Sauce Pasta</span>
+    <span>₹440</span>
+  </div>
+  <div class="menu-item">
+    <span>Smoke Chilli Macaroni Veg</span>
+    <span>₹440</span>
+  </div>
+  <div class="menu-item">
+    <span>Arrabita Pasta (Chicken)</span>
+    <span>₹470</span>
+  </div>
+  <div class="menu-item">
+    <span>Alfredo Pasta (Chicken)</span>
+    <span>₹470</span>
+  </div>
+  <div class="menu-item">
+    <span>Pink Sauce Pasta (Chicken)</span>
+    <span>₹485</span>
+  </div>
+  <div class="menu-item">
+    <span>Smoke Chilli Macaroni (Chicken)</span>
+    <span>₹485</span>
+  </div>
+  <div class="menu-item">
+    <span>Veg Lasagna</span>
+    <span>₹465</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Lasagna</span>
+    <span>₹499</span>
+  </div>
+  </div>
+</div>
+
+<div class="menu-container">
+    <div class="menu-category pizza" onclick="toggleMenu('pizza')">Pizza</div>
+    <div class="menu-items" id="pizza">
+      <div class="menu-item">
+    <span>Classic Margherita Pizza</span>
+    <span>₹240</span>
+  </div>
+  <div class="menu-item">
+    <span>Red Dragon Pizza</span>
+    <span>₹261</span>
+  </div>
+  <div class="menu-item">
+    <span>Farmers Market Pizza</span>
+    <span>₹239</span>
+  </div>
+  <div class="menu-item">
+    <span>Terminator Pizza</span>
+    <span>₹268</span>
+  </div>
+  <div class="menu-item">
+    <span>Peppy Paneer Pizza</span>
+    <span>₹260</span>
+  </div>
+  <div class="menu-item">
+    <span>Corn Fiesta Pizza</span>
+    <span>₹255</span>
+  </div>
+  <div class="menu-item">
+    <span>Butter Chicken Pizza</span>
+    <span>₹280</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Overload Pizza</span>
+    <span>₹289</span>
+  </div>
+  <div class="menu-item">
+    <span>Barbeque Chicken Pizza</span>
+    <span>₹299</span>
+  </div>
+  <div class="menu-item">
+    <span>Meaty Affair Pizza</span>
+    <span>₹319</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Keema Exotic Pizza</span>
+    <span>₹325</span>
+  </div>
+    </div>
+</div>
+
+<div class="menu-container">
+    <div class="menu-category mainc" onclick="toggleMenu('indian main course')">Indian Main Course</div>
+    <div class="menu-items" id="indian main course">
+  <div class="menu-item">
+    <span>Paneer Tikka Masala</span>
+    <span>₹299</span>
+  </div>
+  <div class="menu-item">
+    <span>Veg Kofta</span>
+    <span>₹299</span>
+  </div>
+  <div class="menu-item">
+    <span>Paneer Kofta</span>
+    <span>₹320</span>
+  </div>
+  <div class="menu-item">
+    <span>Malai Kofta</span>
+    <span>₹330</span>
+  </div>
+  <div class="menu-item">
+    <span>Palak Paneer</span>
+    <span>₹305</span>
+  </div>
+  <div class="menu-item">
+    <span>Paneer Lawabdar</span>
+    <span>₹320</span>
+  </div>
+  <div class="menu-item">
+    <span>Paneer Makhanwala</span>
+    <span>₹320</span>
+  </div>
+  <div class="menu-item">
+    <span>Veg Handi</span>
+    <span>₹299</span>
+  </div>
+  <div class="menu-item">
+    <span>Veg Kolhapuri</span>
+    <span>₹295</span>
+  </div>
+  <div class="menu-item">
+    <span>Masala Patiyala</span>
+    <span>₹327</span>
+  </div>
+  <div class="menu-item">
+    <span>Mushroom Tawa Masala</span>
+    <span>₹300</span>
+  </div>
+  <div class="menu-item">
+    <span>Lasooni Aloo</span>
+    <span>₹310</span>
+  </div>
+  <div class="menu-item">
+    <span>Okra Fry</span>
+    <span>₹310</span>
+  </div>
+  <div class="menu-item">
+    <span>Veg Chole</span>
+    <span>₹275</span>
+  </div>
+  <div class="menu-item">
+    <span>Hyderabadi Patiyala</span>
+    <span>₹280</span>
+  </div>
+  <div class="menu-item">
+    <span>Paneer Bhurji</span>
+    <span>₹280</span>
+  </div>
+  <div class="menu-item">
+    <span>Kashmiri Dum Aloo</span>
+    <span>₹330</span>
+  </div>
+  <div class="menu-item">
+    <span>Baby Corn Mushroom Masala</span>
+    <span>₹325</span>
+  </div>
+  <div class="menu-item">
+    <span>Butter Chicken Sweet</span>
+    <span>₹410</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Angara</span>
+    <span>₹450</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Handi</span>
+    <span>₹380</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Kadai</span>
+    <span>₹385</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Rara Masala</span>
+    <span>₹440</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Tikka Masala</span>
+    <span>₹450</span>
+  </div>
+  <div class="menu-item">
+    <span>Egg Bhurji</span>
+    <span>₹200</span>
+  </div>
+  <div class="menu-item">
+    <span>Murg Mussalam</span>
+    <span>₹500</span>
+  </div>
+  <div class="menu-item">
+    <span>Pomfret Pudina</span>
+    <span>₹510</span>
+  </div>
+  <div class="menu-item">
+    <span>Pomfret Hara Masala</span>
+    <span>₹522</span>
+  </div>
+  <div class="menu-item">
+    <span>Prawns Kadai</span>
+    <span>₹540</span>
+  </div>
+  <div class="menu-item">
+    <span><i>Add Butter: ₹10</i></span>
+    <span><i>Add Cheese: ₹15</i></span>
+  </div>
+  </div>
+</div>
+
+<div class="menu-container">
+    <div class="menu-category rice" onclick="toggleMenu('rice')">Rice</div>
+    <div class="menu-items" id="rice">
+  <div class="menu-item">
+    <span>Plain Rice</span>
+    <span>₹200</span>
+  </div>
+  <div class="menu-item">
+    <span>Dal Rice</span>
+    <span>₹230</span>
+  </div>
+  <div class="menu-item">
+    <span>Dal Khichdi</span>
+    <span>₹255</span>
+  </div>
+  <div class="menu-item">
+    <span>Veg Biryani</span>
+    <span>₹310</span>
+  </div>
+  <div class="menu-item">
+    <span>Paneer Tawa Biryani</span>
+    <span>₹380</span>
+  </div>
+  <div class="menu-item">
+    <span>Veg Hyderabadi Biryani</span>
+    <span>₹300</span>
+  </div>
+  <div class="menu-item">
+    <span>Paneer Kashmiri Pulao</span>
+    <span>₹400</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Biryani</span>
+    <span>₹420</span>
+  </div>
+  <div class="menu-item">
+    <span>Egg Biryani</span>
+    <span>₹360</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Hyderabadi Biryani</span>
+    <span>₹540</span>
+  </div>
+  </div>
+</div>
+
+<div class="menu-container">
+    <div class="menu-category chinesem" onclick="toggleMenu('chinese main course')">Chinese Main Course</div>
+    <div class="menu-items" id="chinese main course">
+  <div class="menu-item">
+    <span>Veg Mongolian Pot Rice</span>
+    <span>₹479</span>
+  </div>
+  <div class="menu-item">
+    <span>Red Thai Curry</span>
+    <span>₹530</span>
+  </div>
+  <div class="menu-item">
+    <span>Green Thai Curry</span>
+    <span>₹530</span>
+  </div>
+  <div class="menu-item">
+    <span>Burnt Garlic Chilli Rice</span>
+    <span>₹360</span>
+  </div>
+  <div class="menu-item">
+    <span>Veg Chopper Rice</span>
+    <span>₹449</span>
+  </div>
+  <div class="menu-item">
+    <span>Veg Triple Schezwan Rice</span>
+    <span>₹477</span>
+  </div>
+  <div class="menu-item">
+    <span>Veg Hong Kong Rice</span>
+    <span>₹477</span>
+  </div>
+  <div class="menu-item">
+    <span>Bamboo Rice</span>
+    <span>₹500</span>
+  </div>
+  <div class="menu-item">
+    <span>Veg Hakka Noodles</span>
+    <span>₹485</span>
+  </div>
+  <div class="menu-item">
+    <span>Veg Schezwan Noodles</span>
+    <span>₹485</span>
+  </div>
+  <div class="menu-item">
+    <span>Burnt Garlic Noodles</span>
+    <span>₹490</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Chopper Rice</span>
+    <span>₹515</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Bamboo Rice</span>
+    <span>₹540</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Green Thai Curry</span>
+    <span>₹585</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Red Thai Curry</span>
+    <span>₹585</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Burnt Garlic Rice</span>
+    <span>₹440</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Hakka Noodles</span>
+    <span>₹515</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Schezwan Noodles</span>
+    <span>₹515</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Burnt Garlic Noodles</span>
+    <span>₹515</span>
+  </div>
+  <div class="menu-item">
+    <span>Chicken Chilli Noodles</span>
+    <span>₹530</span>
+  </div>
+</div>
+</div>
+
+<div class="menu-container">
+    <div class="menu-category inroti" onclick="toggleMenu('indian roti')">Indian Roti</div>
+    <div class="menu-items" id="indian roti">
+  <div class="menu-item">
+    <span>Chapati</span>
+    <span>₹40</span>
+  </div>
+  <div class="menu-item">
+    <span>Butter Roti</span>
+    <span>₹55</span>
+  </div>
+  <div class="menu-item">
+    <span>Butter Kulcha</span>
+    <span>₹60</span>
+  </div>
+  <div class="menu-item">
+    <span>Butter Garlic Kulcha</span>
+    <span>₹70</span>
+  </div>
+  <div class="menu-item">
+    <span>Butter Naan</span>
+    <span>₹80</span>
+  </div>
+  <div class="menu-item">
+    <span>Butter Garlic Naan</span>
+    <span>₹100</span>
+  </div>
+  <div class="menu-item">
+    <span>Laccha Paratha</span>
+    <span>₹40</span>
+  </div>
+  <div class="menu-item">
+    <span>Tandoor Roti</span>
+    <span>₹35</span>
+  </div>
+  <div class="menu-item">
+    <span><i>Add Extra Butter: ₹10</i></span>
+    <span><i>Add Cheese: ₹15</i></span>
+  </div>
+    </div>
+</div>
+
+<div class="menu-container">
+    <div class="menu-category dessertbev" onclick="toggleMenu('desserts & beverages')">Desserts & Beverages</div>
+    <div class="menu-items" id="desserts & beverages">
+  <div class="menu-item">
+    <span>Gulab Jamun</span>
+    <span>₹200</span>
+  </div>
+  <div class="menu-item">
+    <span>Rabdi</span>
+    <span>₹290</span>
+  </div>
+  <div class="menu-item">
+    <span>Jalebi Rabdi</span>
+    <span>₹320</span>
+  </div>
+  <div class="menu-item">
+    <span>Gulab Jamun with Rabdi</span>
+    <span>₹320</span>
+  </div>
+  <div class="menu-item">
+    <span>Choco Lava Cake</span>
+    <span>₹260</span>
+  </div>
+  <div class="menu-item">
+    <span>Brownie Sizzler</span>
+    <span>₹415</span>
+  </div>
+  <div class="menu-item">
+    <span>Dark Chocolate Torte</span>
+    <span>₹299</span>
+  </div>
+  <div class="menu-item">
+    <span>Biscoff Cheesecake</span>
+    <span>₹205</span>
+  </div>
+  <div class="menu-item">
+    <span>Blueberry Cheesecake</span>
+    <span>₹215</span>
+  </div>
+  <div class="menu-item">
+    <span>Flower Pot Surprise</span>
+    <span>₹455</span>
+  </div>
+  <div class="menu-item">
+    <span>Chocolate Gelato</span>
+    <span>₹300</span>
+  </div>
+  <div class="menu-item">
+    <span>Mango Gelato</span>
+    <span>₹300</span>
+  </div>
+  <div class="menu-item">
+    <span>Strawberry Gelato</span>
+    <span>₹300</span>
+  </div>
+  <div class="menu-item">
+    <span>Raspberry Gelato</span>
+    <span>₹300</span>
+  </div>
+  <div class="menu-item">
+    <span>Virgin Mojito</span>
+    <span>₹330</span>
+  </div>
+  <div class="menu-item">
+    <span>Virgin Pinacolada</span>
+    <span>₹350</span>
+  </div>
+  <div class="menu-item">
+    <span>Fruit Punch</span>
+    <span>₹350</span>
+  </div>
+  <div class="menu-item">
+    <span>Blushing Caprioska</span>
+    <span>₹360</span>
+  </div>
+  <div class="menu-item">
+    <span>Blue Lagoon</span>
+    <span>₹290</span>
+  </div>
+  <div class="menu-item">
+    <span>Chocolate Oreo Shake</span>
+    <span>₹300</span>
+  </div>
+  <div class="menu-item">
+    <span>Vanilla Shake</span>
+    <span>₹300</span>
+  </div>
+  <div class="menu-item">
+    <span>Creamy Hot Chocolate</span>
+    <span>₹440</span>
+  </div>
+  <div class="menu-item">
+    <span>Cappucino</span>
+    <span>₹210</span>
+  </div>
+  <div class="menu-item">
+    <span>Cafe Mocha</span>
+    <span>₹220</span>
+  </div>
+  <div class="menu-item">
+    <span>Cafe Latte</span>
+    <span>₹220</span>
+  </div>
+  <div class="menu-item">
+    <span>Cold Coffee</span>
+    <span>₹234</span>
+  </div>
+  <div class="menu-item">
+    <span>Tea</span>
+    <span>₹50</span>
+  </div>
+  <div class="menu-item">
+    <span>Lemon Iced Tea</span>
+    <span>₹100</span>
+  </div>
+    </div>
+</div>
+
+
+<script>
+  function toggleMenu(category) {
+    var menuItems = document.getElementById(category);
+    if (menuItems.style.display === 'block') {
+      menuItems.style.display = 'none';
+    } else {
+      menuItems.style.display = 'block';
+    }
+  }
+</script>
+
+</body>
+</html>
